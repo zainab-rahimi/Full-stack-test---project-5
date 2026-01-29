@@ -21,4 +21,9 @@ describe('NotFoundComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render the 404 page', () => {
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h1')).toBeTruthy();
+  });
 });
